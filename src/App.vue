@@ -1,5 +1,5 @@
 <script>
-import Weather from './components/weather.vue'
+import Weather from '@/components/weather.vue'
 export default defineComponent({
   name:'App',
   components: {

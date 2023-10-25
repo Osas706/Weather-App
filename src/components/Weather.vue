@@ -1,6 +1,6 @@
 <script>
 import axios from 'axios'
-import DaysWeather from "./DaysWeather.vue";
+import DaysWeather from "@/components/DaysWeather.vue";
 
 export default defineComponent({
   name: "myWeather",
