@@ -47,6 +47,8 @@ body{
   background-color: #121212 !important;
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .app{
