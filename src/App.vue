@@ -1,7 +1,6 @@
 <script>
 import Weather from './components/weather.vue'
-
-export default (await import('vue')).defineComponent({
+export default defineComponent({
   name:'App',
   components: {
     Weather
@@ -32,7 +31,7 @@ export default (await import('vue')).defineComponent({
           <input type="text" class="input form-control" v-model="city" placeholder="Enter a city">
         </div>
         <button class="btn-search btn btn-primary" @click="searchWeather">
-          Search 
+          Search <i class="fa fa-search"></i>
         </button>
       </div>
     </div>

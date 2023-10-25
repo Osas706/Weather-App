@@ -1,7 +1,7 @@
 <script>
 import moment from 'moment'
 import axios from 'axios';
-export default (await import('vue')).defineComponent({
+export default defineComponent({
   props:{
     cityname: String,
   },
