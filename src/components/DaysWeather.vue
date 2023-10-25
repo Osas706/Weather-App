@@ -13,14 +13,14 @@ export default defineComponent({
    }
   },
   mounted(){
-    this.fetchWeatherData();
+    this.fetchWeatherData()
   },
   methods: {
     async fetchWeatherData(){
       const apiKey = '1384d68bd2647f38b39bf22eb8ec5d28';
       const city = this.cityname;
       const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=matric&appid=${apiKey}`;
-
+     
       await axios.get(apiUrl).then(Response => {
         const forecastData = Response.data.list;
         const filteredData = forecastData.map(item => {
